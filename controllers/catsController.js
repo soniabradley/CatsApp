@@ -1,12 +1,12 @@
-// Create all the functions that will do the routing for your app
+// Functions that will do the routing for the app
 
 var express = require("express");
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
-var cat = require("../models/cat.js");
+// Import the model (cats.js) to use its database functions
+var cat = require("../models/cats.js");
 
-// Create all our routes and set up logic within those routes where required.
+// Routes and logic within routes required.
 router.get("/", function(req, res) {
   cat.all(function(data) {
     var hbsObject = {
@@ -37,6 +37,13 @@ router.put("/:id", function(req, res) {
   }, condition, function() {
     res.redirect("/");
   });
+});
+// added delete function, also adjusted index.handlebars
+router.delete("/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+  cat.delete(condition,function(){
+    res.redirect('/');
+  })
 });
 
 // Export routes for server.js to use.
