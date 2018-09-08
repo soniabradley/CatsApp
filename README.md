@@ -1,5 +1,5 @@
-# CatsApp
-
+# Cats(MVC)App
+![alt text](MVC.png "Model View Controller")
 
 # To install
 Git Clone the repository
@@ -17,8 +17,14 @@ Then run the command $ server.js
 Browser start with search for localhost:3000 
 
 # Built With
+
+* [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm) The Model-View-Controller separates an application into three main logical components: the model, the view, and the controller. 
+
 * [ORM - Object Relationional Mapper](https://en.wikipedia.org/wiki/Object-relational_mapping) ORM often reduces the amount of code that needs to be written.  Disadvantages of ORM tools generally stem from the high level of abstraction obscuring what is actually happening in the implementation code. 
 
 * FYI - The Difference Between a [Class]() and a [Module](). Basically, a class can be instantiated but a module cannot. A module will never be anything other than a library of methods. A class can be so much more -- it can hold its state (by keeping track of instance variables) and be duplicated as many times as you want.
 
 * [cb](https://www.google.com/search?q=callback+in+javascript&oq=call+back+in+ja&aqs=chrome.1.69i57j0l5.9481j1j7&sourceid=chrome&ie=UTF-8) Call Back - A callback is a function that is to be executed after another function has finished executing — hence the name 'call back'. More complexly put: In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.
+
+# Created By
+Sonia Bradley
